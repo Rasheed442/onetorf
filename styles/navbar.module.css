@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        padding: 120px;
+        width: 100vw;
+}
+.top h1{
+    color: #245BE8;
+    font-size: 36px;
+}
+.navlink p{
+    color: black;
+    font-size: 20px;
+}
+.navlink{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.navbutton button{
+        padding: 20px;
+       background-color: #245BE8;
+       border: none;
+       border-radius: 20px;
+       color: white;
+       cursor: pointer;
+       font-size: 20px;
+       width: 178px;
+       line-height: 20px;
+}
+.navicon{
+    display: none;
+}
+
+@media screen and (max-width:904px) {
+    .navicon{
+        display: block;
+    }
+    .navbutton button{
+        display: none;
+    }
+    .top{
+        padding: 30px;
+    }
+    .navlink{
+        display: none;
+    }
+    .navmenu{
+        position: absolute;
+        top: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .navmenu p{
+        color: black
+    };
+    .navbutton button{
+        display: none;
+    }
+
+  
+    .menubutton button{
+        padding: 15px;
+        left: 30px;
+        position: absolute;
+            top: 300px;
+            background-color: #245BE8;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            width: 10rem;
+    }
+}
